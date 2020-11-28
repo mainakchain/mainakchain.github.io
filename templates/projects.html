@@ -1,0 +1,302 @@
+  <div class="row">
+    <h2>Projects</h2>
+    <hr>
+    <div class="row row-no-gutters">
+      <div class="col-sm-12">
+        <h3 class="content_heading">Customer Offer Recommendation</h3>
+        <br>
+        <p>A offer recommendation pipeline built on retails data based on the purchases made using knowledge graph embeddings. Accepted as one of the <a href="https://sigir-ecom.github.io/ecom2019/accepted-papers.html">24 workshop papers </a> to be presented at SIGIR eCom 2019, Paris, France</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">  Overview </div>
+          <div class="panel-body"> &emsp; Companies send a lot of promotional offers and coupons to customers to attract them to buy more. Offer recommendation systems can help to identify relevant offers to users. In this paper, we present a Neural Factorization (NF) model for the task of Offer recommendation. We represent users and offers with Knowledge Graph Embeddings (KGE). Specifically, we model the available data in the form of a Knowledge Graph (KG) and learn embeddings for entities and relations using a standard KGE technique called TransE. We also incorporate the user temporal features in the NF model using Long Short Term Memory (LSTM) with attention framework. We experiment with Kaggle Acquire Valued Shoppers Challenge dataset and show that the performance of our model is significantly better than tree-based methods.</div>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+    <div class="row row-no-gutters">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="https://github.com/mainakchain/cfd">CHATTERJI</a>: Messenger with real time emoji prediciton&#128516;</h3>
+        <br>
+        <p>A messenger platform developed within 24 hours of hackathon for real time chatting with emoji prediction.</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">  Overview </div>
+          <div class="panel-body"> &emsp; For the program, we developed the webapp named Chatterji, the Chatting-with-Emoji. My two teammates developed the frontend (in Angular) and the webapp was built on Django framework. I worked on developing the prediction model for the app. We took sentimental analysis, which aims at maximum of 3 classifications (positive, neutral and negative), to a whole new level of 20 classifications (which were basically the 20 emojis our model predicted). Some of these 20 emojis were &#128514;, &#128512;, &#128513;, &#128525;, &#129303;, &#10084;&#65039;, &#128557;, &#x1f4aa;, &#128540;, &#128153;,  &#128526;, &#128293;, &#128536; and &#128175;. Although, if I had developed this project in 2020, &#128567; would definitely be there. 
+          <br>
+          &emsp; The model was a developed on keras,using a RNN (Recurrent Neural Network) composed of 2 LSTM (Long Short Term Memory) layers. After replacing  rare words, performing word embeddings using indexing for all the remaining words and padding the tweets, indexed tweets were created and fed into the model to train. It was trained using 5.8 million tweets from Twitter on Google Colab, for the GPU provided. With 25 minutes of training time, our prediction model was ready with pretty decent accuracy of 60.7% on validation set and 41% on test set, compared to the state-of-the-art method for the same. It was pretty easily and effectively able to predict the emojis for short texts (similar to the tweets) as we trained in just on a single corpus. Hope to build a better model in the future that can predict more number of emojis much easily.  </div>
+        </div>
+
+        <br>
+        <a class="github-button btn" href="https://github.com/mainakchain/cfd" data-size="large" data-show-count="false" aria-label="code-fun-do on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/mainakchain/cfd" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star code-fun-do on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/mainakchain/cfd/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork code-fun-do on GitHub">Fork</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row row-no-gutters">
+      <div class="col-sm-12">
+        <h3 class="content_heading">Early warning system for site workers</h3>
+        <br>
+        <p>A real time health monitoring system integrated with a prediction and alerting mechanism using real time data</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">  Overview </div>
+          <div class="panel-body"> &emsp; Morbidity rate in iron and steel industries is unexpectedly high, about 60% of total workers are morbid workers to go with the figures. Among them, 80% suffered due to respiratory ailments and 17% suffer casualties due to heat stress. In order to tackle this grave a situation, I worked on an system, that can predict such casualties before hand and report the same to the concerned authority, say the responsible manager for those workers. An Android Application was developed, which was to notify the person. The workers were supposed to wear a Fitbit watch which will keep track of their heart beat rate and send the same continuously to the servers. Apart from that, devices that can supply real time WBGT (Wet-Bulb Globe Temperature) and RPSM(Respirable Suspended Particulate Matter) value of the room. Data from all these devices was sent to MySQL database from where the application would fetch data and predict if a worker is in bad shape or needs immediate attention. Some of the parameters considered for prediction were worker id, age of worker, has drinking and smoking habits, area of work, type of work , WBGT value, Heart rate, RSPM value etc. A multi-label SVM classifier was used, with hyperparameter tuning using Genetic Algorithm, was used to predict the stability condition for workers as good(green), the health situation might go worse(yellow), needs immediate attention(red). Later, in order to automate the process, OpenCV for multi-scale template matching, was used in the main computer system.</div>
+        </div>
+
+        <div class="row row-no-gutters">
+        <div class="col-sm-3"> </div>
+        <div class="col-sm-6" align="center">
+          <h5>Workflow</h5>
+          <img src="/static/docs/ews_workflow.png" alt="EWS" width="100%" height="400px">
+        </div>
+        </div>
+
+          <br>
+          <a class="github-button btn" href="https://github.com/mainakchain/BPT-Project" data-size="large" data-show-count="false" aria-label="EWS on GitHub">Code</a>
+          <a class="github-button" href="https://github.com/mainakchain/BPT-Project" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star EWS on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/mainakchain/BPT-Project/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork EWS on GitHub">Fork</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row row-no-gutters">
+      <div class="col-sm-12">
+        <h3 class="content_heading">Decision Support System for occupational safety</h3>
+        <br>
+        <p>A GUI based system to make risk prediction based on occupational safetly data.</p>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">  Overview </div>
+          <div class="panel-body"> &emsp; Every year, the deaths caused due to lack of occupational safety alone is gruesome to know. In order to alleviate this grave situation, we tried to develop a Decision Support System (DSS) in occupational safety. The system was completely built using Python. For developing the user interface, we used Kivy. Using the system, we can perform Descriptive Analysis and Predictive Analysis with Evaluation of Models based performance parameters like accuracy, precision, recall, F-1 score and AUC value and ROC curve and automatic selection of the model is done based on the best parameters' values. The hyperparameters of model were tuned using Genetic Algorithms. The system can prove to be immensely useful for occupational safety front for industries, reducing casualties.</div>
+          <br>
+        </div>
+          <a class="github-button btn" href="https://github.com/mainakchain/DSS-Kivy" data-size="large" data-show-count="false" aria-label="code-fun-do on GitHub">Code</a>
+          <a class="github-button" href="https://github.com/mainakchain/DSS-Kivy" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star code-fun-do on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/mainakchain/DSS-Kivy/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork code-fun-do on GitHub">Fork</a>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://evalai.cloudcv.org">EvalAI</a>: Evaluating state of the art in AI</h3>
+        <br>
+        <p>Open source platform to create, collaborate and participate in the AI Challenges organized around the globe.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/evalai" data-size="large" data-show-count="false" aria-label="cloud-cv/evalai on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/evalai" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/evalai on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/evalai/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/evalai on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://evalai.cloudcv.org" target="_blank"><img src="/static/img/evalai_preview.png" width="100%"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="/static/img/kaggle_comparison.png" width="100%">
+      </div>
+      <div class="col-sm-4" align="center">
+        <h5>Invited talk on EvalAI in VQA 2017 Workshop</h5>
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/goEe4gx1yZg?rel=0&amp;showinfo=0;start=1682" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- <hr> -->
+    <!-- <div class="row">
+        <div class="col-sm-12">
+          <h3 class="content_heading">HIEME: Human-Interactive Evaluation Made Easy</h3>
+          <br>
+          <p>Proof of concept of a central, standardized open source platform for human-in-the-loop evaluation of AI agents.
+            Developed the infrastructure to pair Amazon Mechanical Turk (AMT) users in real-time with artificial visual dialog agents.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6" align="center">
+          <h5>HIEME Architecture</h5>
+          <img src="/static/img/hieme.jpeg" alt="HIEME" width="100%" height="400px">
+        </div>
+          <div class="col-sm-6" align="center">
+            <h5>Short Video on evaluating Visual Dialog Agents using HIEME</h5>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HCpQWGmdyoY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+   -->
+      <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://fabrik.cloudcv.org">Fabrik</a>: Collaboratively build, visualize, and design neural nets in browser</h3>
+        <br>
+        <p>Fabrik is an online collaborative platform to build, visualize and train deep learning models via a simple drag-and-drop interface.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/fabrik" data-size="large" data-show-count="false" aria-label="cloud-cv/fabrik on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/fabrik" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/fabrik on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/fabrik/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/fabrik on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/static/img/fabrik.gif" width="100%">
+      </div>
+      <div class="col-sm-6" align="center">
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/woZ8XFZ4rMc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://visualchatbot.cloudcv.org">Visual Chatbot</a>: A chatbot that can see!</h3>
+        <br>
+        <p>Built a visual chatbot which can hold a meaningful dialog with humans natural, conversational language about visual content. Specifically, given an image, a dialog history, and a question about the image, the chatbot has to ground the question in image, infer context from history, and answer the question accurately.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/visual-chatbot" data-size="large" data-show-count="false" aria-label="cloud-cv/visual-chatbot on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/visual-chatbot" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/visual-chatbot on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/visual-chatbot/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/visual-chatbot on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4" align="center">
+        <h3><a href="http://visualchatbot.cloudcv.org" target="_blank">Live Demo</a></h3>
+        <iframe style="border: groove;" src="https://visualchatbot.cloudcv.org" width="100%" height="530" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-8" align="center">
+        <h3>Demo Video</h3>
+        <iframe width="100%" height="530" src="https://www.youtube.com/embed/SztC8VOWwRQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>         -->
+
+    <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://vqa.cloudcv.org">Visual Question Answering (VQA) </a>Demo</h3>
+        <br>
+        <p>In Visual Question Answering, given an image and a free-form natural language question about the image (e.g., "What kindof store is this?", "How many people are waiting in the queue?", "Is it safe to cross the street?") the model's task is to automatically produce a concise, accurate, free-form, natural language answer ("bakery", "5", "Yes"). This demo is implemented using <a href="https://github.com/jiasenlu/HieCoAttenVQA">Hierarchical Question-Image Co-Attention</a> model.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/vqa" data-size="large" data-show-count="false" aria-label="cloud-cv/vqa on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/vqa" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/vqa on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/vqa/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/vqa on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6" align="center">
+        <h3><a href="http://vqa.cloudcv.org" target="_blank">Live Demo</a></h3>
+        <a href="http://vqa.cloudcv.org" target="_blank"><img src="/static/img/vqa.png" width="100%"></a>
+      </div>
+      <div class="col-sm-6" align="center">
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/bC2kwzdyJPs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://gradcam.cloudcv.org">Gradient-weighted Class Activation Mapping (Grad-CAM)</a> Demo</h3>
+        <br>
+        <p>Gradient-weighted Class Activation Mapping (Grad-CAM) is a novel class-discriminative localization technique, that can be used to make CNN based models interpretable. Grad-CAM highlights regions of the image the VQA model looks at while making predictions. Given an image and a caption or question about that image, the model shows where it looked while doing prediction.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/grad-cam" data-size="large" data-show-count="false" aria-label="cloud-cv/grad-cam on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/grad-cam" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/grad-cam on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/grad-cam/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/grad-cam on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row" align="center">
+      <div class="col-sm-6">
+        <h4><a href="http://gradcam.cloudcv.org/vqa">Grad-CAM VQA Demo</a></h4>
+        <a href="http://gradcam.cloudcv.org/vqa"><img src="/static/img/gcam_vqa.gif" width="100%"></a>
+      </div>
+      <div class="col-sm-6">
+        <h4><a href="http://gradcam.cloudcv.org/classification">Grad-CAM Classification Demo</a></h4>
+        <a href="http://gradcam.cloudcv.org/classification"><img src="/static/img/gcam_classification.gif" width="100%"></a>
+      </div>
+      <div class="col-sm-6">
+        <h4><a href="http://gradcam.cloudcv.org/captioning">Grad-CAM Captioning Demo</a></h4>
+        <a href="http://gradcam.cloudcv.org/captioning"><img src="/static/img/gcam_captioning.gif" width="100%"></a>
+      </div>
+      <div class="col-sm-6">
+        <h4>Grad-CAM Demo Video</h4>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/COjUB9Izk6E?start=29" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <hr>
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://origami.cloudcv.org">Origami</a>: Artificial Intelligence as a Service</h3>
+        <br>
+        <p>Origami is an AI-as-a-service that allows researchers to easily convert their deep learning models into an online service that is widely accessible to everyone without the need to setup the infrastructure, resolve the dependencies, and build a web service around the deep learning model.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/origami" data-size="large" data-show-count="false" aria-label="cloud-cv/origami on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/origami" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/origami on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/origami/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/origami on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/static/img/origami.png" width="100%">
+      </div>
+      <div class="col-sm-6" align="center">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/wBM7YvcQiJQ?rel=0&amp;controls=0&amp;showinfo=0&amp;start=205" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
+    <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"><a target="_blank" href="http://dbs.cloudcv.org">Diverse Beam Search </a>Demo</h3>
+        <br>
+        <p>Beam search, the standard work-horse for decoding outputs from neural sequence models like RNNs produces generic and uninteresting sequences. This is inadequate for AI tasks with inherent ambiguity — for example, there can be multiple correct ways of describing the contents of an image. The demo overcomes this by proposing a diversity-promoting replacement, <em>Diverse Beam Search</em> that produces sequences that are significantly different — with runtime and memory requirements comparable to beam search.</p>
+        <a class="github-button btn" href="https://github.com/cloud-cv/diverse-beam-search" data-size="large" data-show-count="false" aria-label="cloud-cv/diverse-beam-search on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/cloud-cv/diverse-beam-search" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cloud-cv/diverse-beam-search on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/cloud-cv/diverse-beam-search/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork cloud-cv/diverse-beam-search on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row" align="center">
+      <div class="col-sm-5">
+        <h4><a href="http://dbs.cloudcv.org/captioning" target="_blank">Live Demo</a></h4>
+        <a href="http://dbs.cloudcv.org/captioning" target="_blank"><img src="/static/img/dbs.gif" width="100%"></a>
+      </div>
+      <div class="col-sm-7">
+        <br><br><br>
+        <a href="http://dbs.cloudcv.org/" target="_blank"><img src="/static/img/dbs_teaser.png" width="100%"></a>
+      </div>
+    </div> -->
+
+    <!-- <hr> -->
+
+    <!-- <div class="row">
+      <div class="col-sm-12">
+        <h3 class="content_heading"> <a target="_blank" href="http://210.212.85.155">JSS InfoConnect</a></h3>
+        <br>
+        <p>Web based application that acts as a medium for interaction between all students, faculties and management of JSSATE Noida college. Officially recognized by college. Serves 10,000+ requests per day, 20,000+ users, 20,000+ notices uploaded.</p>
+        <a class="github-button btn" href="https://github.com/ncs-jss/http_200" data-size="large" data-show-count="false" aria-label="ncs-jss/http_200 on GitHub">Code</a>
+        <a class="github-button" href="https://github.com/ncs-jss/http_200" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ncs-jss/http_200 on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/ncs-jss/http_200/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ncs-jss/http_200 on GitHub">Fork</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6" align="center">
+        <a href="http://210.212.85.155/" target="_blank"><img src="/static/img/infoconnect.png" width="100%"></a>
+      </div>
+      <div class="col-sm-6" align="center">
+        <a href="http://210.212.85.155/" target="_blank"><img src="/static/img/infoconnect1.png" width="100%"></a>
+      </div>
+    </div> -->
+    <!-- <hr> -->
+  </div>
